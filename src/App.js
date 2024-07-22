@@ -1,24 +1,58 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import { useEffect, useState } from "react";
+import Lottie from "lottie-react";
+import nightsky from "./LottieFiles/night-sky.json";
+import DotLoader from "react-spinners/DotLoader";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import MoveToTop from "./Components/MoveToTop";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Resume from "./pages/Resume";
+import "./App.css";
 
 function App() {
+  const [Loading, SetLoading] = useState(true);
+  useEffect(() => {
+    SetLoading(true);
+
+    setTimeout(() => {
+      SetLoading(false);
+    }, 1900);
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {Loading ? (
+        <div className="loader">
+          <DotLoader
+            color={"#9067C6"}
+            loading={true}
+            size={100}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        </div>
+      ) : (
+        <div>
+          <Lottie className="bg" animationData={nightsky} loop={true} />
+          <Lottie className="bgtwo" animationData={nightsky} loop={true} />
+          <Lottie className="bgtemp" animationData={nightsky} loop={true} />
+
+          <Navbar />
+          <MoveToTop />
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Project" element={<Projects />} />
+            <Route path="/Resume" element={<Resume />} />
+          </Routes>
+
+          <Footer />
+        </div>
+      )}
+    </>
   );
 }
 
