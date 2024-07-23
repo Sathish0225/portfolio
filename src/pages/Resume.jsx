@@ -6,11 +6,12 @@ import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 import { Link } from 'react-router-dom';
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.mjs',
+  `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.mjs`,
   import.meta.url,
 ).toString();
 
 const Resume = () => {
+  console.log(pdfjs.version);
   const [wid, setwid] = useState(window.innerWidth);
 
   const handleResize = () => {

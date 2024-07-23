@@ -483,6 +483,77 @@ b {
   font-weight: bold;
 }
 
+/* Blog */
+
+.BlogPage {
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 80vh;
+  margin-top: 100px;
+  align-items: center;
+  padding: 25px;
+}
+
+.BlogText {
+  width: 50%;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+}
+
+.BlogTextHeading {
+  font-size: 35px;
+  font-weight: 600;
+  padding-bottom: 40px;
+}
+
+.BlogActivityList {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.BlogActivity {
+  list-style: none !important;
+  text-align: left !important;
+  padding-left: 1px !important;
+}
+
+.BlogText a {
+  color: #9067C6;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.BlogAvatar {
+  width: 580px;
+}
+
+@media(max-width:900px) {
+  .BlogPage {
+    display: block;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .BlogText {
+    text-align: left;
+    display: inline-block;
+    width: 95%;
+    line-height: 24px;
+    letter-spacing: 0.6px;
+    margin-bottom: 80px;
+  }
+
+  .BlogTextHeading {
+    font-size: 26px;
+  }
+
+  .BlogAvatar {
+    width: 400px;
+    margin-bottom: 75px;
+  }
+}
 
 /* Resume */
 

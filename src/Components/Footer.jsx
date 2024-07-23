@@ -8,7 +8,7 @@ const Footer = () => {
   let year = date.getFullYear();
   return (
     <footer>
-      <h4>Designaed and Developed by Sathishkumar Ranganathan</h4>
+      <h4>Designed and Developed by Sathishkumar Ranganathan</h4>
       <h4>Copyright &copy; {year} SR</h4>
       <div className='footerLinks'>
         <Link to="https://github.com/Sathish0225" target='_blank'><FaGithub /></Link>

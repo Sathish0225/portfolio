@@ -9,6 +9,7 @@ import MoveToTop from "./Components/MoveToTop";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Blog from "./pages/Blog";
 import Resume from "./pages/Resume";
 import "./App.css";
 
@@ -46,6 +47,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/About" element={<About />} />
             <Route path="/Project" element={<Projects />} />
+            <Route path="/Blog" element={<Blog />} />
             <Route path="/Resume" element={<Resume />} />
           </Routes>
 

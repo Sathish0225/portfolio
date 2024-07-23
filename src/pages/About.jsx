@@ -14,9 +14,9 @@ const About = () => {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am Sathishkumar Ranganathan from <b>Tamil Nadu, India.</b><br />
             I am currently employed as a software developer at Pedro.<br />
-            I have compledted BE/B.Tech in Computer Science and Engineering At Panimalar Engineering College (Chennai, Tamil Nadu).
+            I have completed a BE/B.Tech in Computer Science and Engineering at Panimalar Engineering College (Chennai, Tamil Nadu).
             <br /><br />
-            I am a quick learner and a hard worker. I am also a team player and a team player.<br /><br />
+            I am a quick learner and a hard worker. I am also a team player.<br /><br />
             Apart from coding, some other activities that I love to do!<br />
           </p>
           <ul className="AboutActivityList">
