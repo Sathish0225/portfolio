@@ -19,6 +19,16 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
     OldPortfolioWebsite: "",
     OldPortfolioTech: "ReactJS, HTML, CSS, TailwindCSS",
 
+    IDataLabelPrinterDesc: "A new Flutter plugin for connecting to iData thermal/label printer via bluetooth (Android Only).",
+    IDataLabelPrinterGithub: "https://github.com/Sathish0225/idata_label_printer",
+    IDataLabelPrinterWebsite: "https://pub.dev/packages/idata_label_printer",
+    IDataLabelPrinterTech: "Flutter, Dart",
+
+    VehicleRegistrationSystemDesc: "A Vehicle Registration System for visitor movement using C# with a ANPR camera and MySQL database.",
+    VehicleRegistrationSystemGithub: "",
+    VehicleRegistrationSystemWebsite: "",
+    VehicleRegistrationSystemTech: "C# Win Form, HikVision ANPR Camera, MySql",
+
     iSecure360Desc: "iSecure360 is a state-of-the-art security management platform that streamlines patrol monitoring, incident management, and visitor tracking. It replaces manual logbooks with real-time insights, automated workflows, and customizable reports, empowering organizations to enhance safety and efficiency.",
     iSecure360Github: "",
     iSecure360Website: "",

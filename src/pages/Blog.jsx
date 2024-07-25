@@ -1,11 +1,18 @@
 import React from 'react'
-import Typewriter from 'typewriter-effect';
+import Lottie from "lottie-react";
+import ComingSoon from "../LottieFiles/coming-soon.json";
+// import Typewriter from 'typewriter-effect';
 
 const Blog = () => {
     return (
         <>
             <div className='BlogPage'>
-                <div className="TypeEffect">
+                <Lottie
+                    className="illustration"
+                    animationData={ComingSoon}
+                    loop={true}
+                />
+                {/* <div className="TypeEffect" style={{ textAlign: "center" }}>
                     <Typewriter
                         options={{
                             strings: ['Coming Soon...'],
@@ -15,7 +22,7 @@ const Blog = () => {
                             deleteSpeed: 20,
                         }}
                     />
-                </div>
+                </div> */}
             </div>
         </>
     )
