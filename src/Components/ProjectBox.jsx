@@ -34,6 +34,11 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
     VehicleRegistrationSystemWebsite: "",
     VehicleRegistrationSystemTech: "C# Win Form, HikVision ANPR Camera, MySql",
 
+    LPRAndAnnoucementSystemDesc: "A LPR and Annoucement System for vehicle movement using C# with a ANPR camera with text-to-speech annoucement and MySQL database.",
+    LPRAndAnnoucementSystemGithub: "",
+    LPRAndAnnoucementSystemWebsite: "",
+    LPRAndAnnoucementSystemTech: "C# Win Form, Dahua ANPR Camera, Text-To-Speech, MySql",
+
     iSecure360Desc: "iSecure360 is a state-of-the-art security management platform that streamlines patrol monitoring, incident management, and visitor tracking. It replaces manual logbooks with real-time insights, automated workflows, and customizable reports, empowering organizations to enhance safety and efficiency.",
     iSecure360Github: "",
     iSecure360Website: "",
@@ -48,6 +53,11 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
     ShareEaseGithub: "https://github.com/Sathish0225/shareease",
     ShareEaseWebsite: "https://shareease.vercel.app/",
     ShareEaseTech: "NodeJS, Express, ReactJS, Bootstrap, MongoDB & Socket.IO",
+
+    SmallWorkoutsDesc: "Short challenges to strengthen your understanding of functions.",
+    SmallWorkoutsGithub: "https://github.com/Sathish0225/codeExamples",
+    SmallWorkoutsWebsite: "",
+    SmallWorkoutsTech: "HTML, CSS & JavaScript",
   }
 
   let show = '';

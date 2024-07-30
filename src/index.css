@@ -420,10 +420,15 @@ b {
 
 .projectHeading {
   text-align: center;
-  padding: 75px 0;
+  padding: 40px 0 0 0;
   letter-spacing: 0.4px;
   font-size: 36px;
   margin-top: 100px;
+}
+
+.projectSubHeading{
+  text-align: center;
+  padding: 0 0 20px 0;
 }
 
 .project {
@@ -476,12 +481,14 @@ b {
   border-style: none;
 }
 
-.projectShowMoreDiv {
-  margin: 0px auto 0px;
-  text-align: center;
+.projectBtnDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.projectShowMoreBtn {
+.projectShowMoreBtn,
+.projectShowLessBtn {
   cursor: pointer;
   margin: 5px 0px;
   width: 200px;
@@ -494,7 +501,12 @@ b {
   transition: all 0.5s;
 }
 
-.projectShowMoreBtn:hover {
+.projectShowMoreBtn{
+  margin-right: 20px;
+}
+
+.projectShowMoreBtn:hover,
+.projectShowLessBtn:hover {
   transition: all 0.5s;
   background-color: #E7E7E7;
   color: #431f47;
@@ -615,7 +627,7 @@ b {
 /* FOOTER */
 
 footer {
-  width: 90%;
+  width: 100%;
   height: 40px;
   margin: 10px auto;
   margin-top: 80px;
