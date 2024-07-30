@@ -19,6 +19,11 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
     OldPortfolioWebsite: "",
     OldPortfolioTech: "ReactJS, HTML, CSS, TailwindCSS",
 
+    CodeEditorioDesc: "Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage",
+    CodeEditorioGithub: "https://github.com/Sathish0225/code-editor",
+    CodeEditorioWebsite: "https://code-editor-sigma-one.vercel.app/",
+    CodeEditorioTech: "ReactJS, HTML, CSS",
+
     IDataLabelPrinterDesc: "A new Flutter plugin for connecting to iData thermal/label printer via bluetooth (Android Only).",
     IDataLabelPrinterGithub: "https://github.com/Sathish0225/idata_label_printer",
     IDataLabelPrinterWebsite: "https://pub.dev/packages/idata_label_printer",

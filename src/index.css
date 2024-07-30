@@ -582,7 +582,7 @@ b {
 /* Resume */
 
 .ResumePage {
-  width: fit-content;
+  width: "fit-content";
   position: relative;
   margin: 100px auto 0px;
   text-align: center;

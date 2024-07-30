@@ -8,6 +8,7 @@ import iSecureVMSImage from '../images/iSecureVMS.png';
 import ShareEaseImage from '../images/shareease.png';
 import VehicleRegistrationSystemImage from '../images/vehicle-registration-system.png';
 import iDataLabelPrinterImage from '../images/iDataLabelPrinter.png';
+import codeEditorIoImage from '../images/code-editor-io.png';
 
 const Projects = () => {
     const [visibleProjects, setVisibleProjects] = useState(6);
@@ -15,6 +16,7 @@ const Projects = () => {
         { projectPhoto: iSecure360Image, projectName: "iSecure360" },
         { projectPhoto: iSecureVMSImage, projectName: "iSecureVMS" },
         { projectPhoto: VehicleRegistrationSystemImage, projectName: "Vehicle Registration System" },
+        { projectPhoto: codeEditorIoImage, projectName: "Code Editor io" },
         { projectPhoto: iDataLabelPrinterImage, projectName: "IData Label Printer" },
         { projectPhoto: ShareEaseImage, projectName: "ShareEase" },
         { projectPhoto: TodoAppImage, projectName: "Todo App" },

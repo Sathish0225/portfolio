@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { AiOutlineHome, AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { BsPerson } from 'react-icons/bs';
 import { CgFileDocument } from 'react-icons/cg';
-import { FaBloggerB } from "react-icons/fa";
+import { GrBlog } from "react-icons/gr";
 
 const Navbar = () => {
   const [navbarblur, setNavbarblur] = useState(false);
@@ -52,7 +52,7 @@ const Navbar = () => {
         <li onClick={hideMenu}><Link to="/"><AiOutlineHome /> Home</Link></li>
         <li onClick={hideMenu}><Link to="/About"><BsPerson /> About</Link></li>
         <li onClick={hideMenu}><Link to="/Project"><AiOutlineFundProjectionScreen /> Project</Link></li>
-        <li onClick={hideMenu}><Link to="/Blog"><FaBloggerB /> Blog</Link></li>
+        <li onClick={hideMenu}><Link to="/Blog"><GrBlog /> Blog</Link></li>
         <li onClick={hideMenu}><Link to="/Resume"><CgFileDocument /> Resume</Link></li>
       </ul>
 
