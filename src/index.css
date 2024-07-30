@@ -426,7 +426,7 @@ b {
   margin-top: 100px;
 }
 
-.projectSubHeading{
+.projectSubHeading {
   text-align: center;
   padding: 0 0 20px 0;
 }
@@ -501,7 +501,7 @@ b {
   transition: all 0.5s;
 }
 
-.projectShowMoreBtn{
+.projectShowMoreBtn {
   margin-right: 20px;
 }
 
@@ -621,6 +621,11 @@ b {
   transition: all 0.5s;
   background-color: #E7E7E7;
   color: #431f47;
+}
+
+.pageBtn:hover {
+  transition: all 0.5s;
+  transform: scale(1.1);
 }
 
 
