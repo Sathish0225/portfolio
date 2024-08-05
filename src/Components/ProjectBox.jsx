@@ -84,7 +84,7 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
         {
           (desc[projectName.replace(/\s+/g, '') + 'Website'] !== '' && desc[projectName.replace(/\s+/g, '') + 'Website'] !== null) &&
           <Link to={desc[projectName.replace(/\s+/g, '') + 'Website']} target='_blank' rel="noopener">
-            <button className='projectbtn'><FaEye /> Demo</button>
+            <button className='projectbtn'><FaEye /> View</button>
           </Link>
         }
         <br />

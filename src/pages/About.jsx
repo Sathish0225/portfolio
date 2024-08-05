@@ -48,28 +48,33 @@ const About = () => {
 
       </div>
 
-      <h1 className='SkillsHeading'>Professional Skillset</h1>
+      <h1 className='SkillsHeading'>Professional <b>Skillset</b></h1>
       <div className='skills'>
 
-        <Skills skill='React' />
+        <Skills skill='C#' />
+        <Skills skill='Javascript' />
         <Skills skill='Node' />
         <Skills skill='Express' />
+        <Skills skill='React' />
         <Skills skill='Php' />
         <Skills skill='Flutter' />
         <Skills skill='MongoDb' />
         <Skills skill='MySql' />
         <Skills skill='SqlServer' />
+        <Skills skill='Npm' />
+        <Skills skill='Bootstrap' />
         <Skills skill='Git' />
         <Skills skill='Github' />
-        <Skills skill='Javascript' />
-        <Skills skill='C#' />
+      </div>
+
+      <h1 className='SkillsHeading'><b>Tools</b> I use</h1>
+      <div className="skills">
+
+        <Skills skill='Vscode' />
         <Skills skill='Postman' />
         <Skills skill='Figma' />
         <Skills skill='Vercel' />
-        <Skills skill='Npm' />
-        <Skills skill='Bootstrap' />
       </div>
-
     </>
   )
 }

@@ -38,7 +38,6 @@ const Home = () => {
         <Tilt>
           <img className='Avatar' src={Basketball} alt="" />
         </Tilt>
-
       </div>
     </div>
   )

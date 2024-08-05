@@ -2,8 +2,9 @@ import React from 'react';
 import { CgCPlusPlus } from "react-icons/cg";
 import { FaReact, FaPython, FaGitAlt, FaGithub, FaNpm, FaFigma, FaBootstrap } from "react-icons/fa";
 import { DiNodejs, DiJavascript1 } from "react-icons/di";
-import { SiPhp, SiExpress, SiMongodb, SiPostman, SiVercel, SiCsharp, SiMysql, SiMicrosoftsqlserver } from "react-icons/si";
+import { SiPhp, SiExpress, SiMongodb, SiPostman, SiVercel, SiCsharp, SiMysql, SiMicrosoftsqlserver, SiPostgresql } from "react-icons/si";
 import { RiFlutterFill } from "react-icons/ri";
+import { VscVscode } from "react-icons/vsc";
 
 const Skills = ({ skill }) => {
   const icon = {
@@ -25,7 +26,9 @@ const Skills = ({ skill }) => {
     Figma: <FaFigma />,
     Bootstrap: <FaBootstrap />,
     Vercel: <SiVercel />,
-    Python: <FaPython />
+    Python: <FaPython />,
+    Vscode: <VscVscode />,
+    Postgresql: <SiPostgresql />
   }
 
   return (
