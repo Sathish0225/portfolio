@@ -70,31 +70,47 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
       </div>
 
       <div className="projectButtons">
-        <Link
-          to={desc[projectName.replace(/\s+/g, '') + 'Github'] || '#'}
-          target='_blank'
-          rel="noopener"
-        >
-          <button
-            className='projectbtn'
-            disabled={desc[projectName.replace(/\s+/g, '') + 'Github'] === ''}
-          >
-            <FaGithub /> Github
-          </button>
-        </Link>
+        {
+          desc[projectName.replace(/\s+/g, '') + 'Github'] !== '' ? (
+            <Link
+              to={desc[projectName.replace(/\s+/g, '') + 'Github'] || '#'}
+              target='_blank'
+              rel="noopener"
+            >
+              <button
+                className='projectbtn'
+              >
+                <FaGithub /> Github
+              </button>
+            </Link>) : (
+            <button
+              className='projectbtn'
+              disabled={desc[projectName.replace(/\s+/g, '') + 'Github'] === ''}
+            ><FaGithub /> Github</button>
+          )
+        }
 
-        <Link
-          to={desc[projectName.replace(/\s+/g, '') + 'Website'] || '#'}
-          target='_blank'
-          rel="noopener"
-        >
-          <button
-            className='projectbtn'
-            disabled={desc[projectName.replace(/\s+/g, '') + 'Website'] === ''}
-          >
-            <FaEye /> View
-          </button>
-        </Link>
+        {
+          desc[projectName.replace(/\s+/g, '') + 'Website'] !== '' ? (
+            <Link
+              to={desc[projectName.replace(/\s+/g, '') + 'Website'] || '#'}
+              target='_blank'
+              rel="noopener"
+            >
+              <button
+                className='projectbtn'
+              >
+                <FaEye /> View
+              </button>
+            </Link>) : (
+            <button
+              className='projectbtn'
+              disabled={desc[projectName.replace(/\s+/g, '') + 'Website'] === ''}
+            >
+              <FaEye /> View
+            </button>
+          )
+        }
       </div>
 
       {(desc[projectName.replace(/\s+/g, '') + 'Tech'] !== '' && desc[projectName.replace(/\s+/g, '') + 'Tech'] !== null) &&
