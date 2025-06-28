@@ -449,9 +449,10 @@ b {
   letter-spacing: 0.5px;
   font-size: 18px;
   line-height: 22px;
-
+  height: 540px;
   margin: 0px 25px 50px 25px;
   transition: 0.5s;
+  overflow: hidden;
 }
 
 .projectBox:hover {
@@ -462,16 +463,51 @@ b {
 .projectPhoto {
   display: block;
   width: 100%;
+  height: 200px;
   margin: 20px 0px;
 }
 
+.projectBox p.description {
+  position: relative;
+  max-height: 5.6em;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 1.4em;
+  margin-bottom: auto;
+  transition: 0.5s;
+}
+
+.projectBox p.description::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1.4em;
+  width: 100%;
+  pointer-events: none;
+}
+
+.projectBox:hover p.description {
+  transition: transform 0.3s ease;
+  max-height: 100vh;
+}
+
+.projectBox:hover p.description::after {
+  display: none;
+}
+
+.projectButtons {
+  margin-bottom: 10px;
+}
+
 .projectbtn {
-  font-size: 20px;
+  font-size: 14px;
   display: inline-flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 5px;
   width: 40%;
-  margin: 25px 3% 0;
+  margin: 5px;
   border-radius: 5px;
   background-color: #431f47;
   color: #E7E7E7;
@@ -479,6 +515,18 @@ b {
   cursor: pointer;
   text-decoration: none;
   border-style: none;
+}
+
+.projectbtn:disabled {
+  background-color: #6e3b76;
+  color: #E7E7E7;
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.projectbtn:not(:disabled):hover {
+  background-color: #5a2c63;
 }
 
 .projectBtnDiv {
@@ -517,6 +565,7 @@ b {
   padding-top: 10px;
   border-top: 1px solid #431f47;
   font-weight: bold;
+  font-size: 14px;
 }
 
 /* Blog */

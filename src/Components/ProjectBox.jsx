@@ -60,35 +60,41 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
     SmallWorkoutsTech: "HTML, CSS & JavaScript",
   }
 
-  let show = '';
-  if (desc[projectName.replace(/\s+/g, '') + 'Github'] === "") {
-    show = "none";
-  }
-
   return (
     <div className='projectBox'>
       <img className='projectPhoto' src={projectPhoto} alt="Project display" />
-      <div>
-        <br />
+      <div style={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
         <h3>{projectName}</h3>
         <br />
-        {desc[projectName.replace(/\s+/g, '') + 'Desc']}
-        <br />
-        {
-          (desc[projectName.replace(/\s+/g, '') + 'Github'] !== '' && desc[projectName.replace(/\s+/g, '') + 'Github'] !== null) &&
-          <Link style={{ display: show }} to={desc[projectName.replace(/\s+/g, '') + 'Github']} target='_blank' rel="noopener">
-            <button className='projectbtn'><FaGithub /> Github</button>
-          </Link>
-        }
+        <p className="description">{desc[projectName.replace(/\s+/g, '') + 'Desc']}</p>
+      </div>
 
-        {
-          (desc[projectName.replace(/\s+/g, '') + 'Website'] !== '' && desc[projectName.replace(/\s+/g, '') + 'Website'] !== null) &&
-          <Link to={desc[projectName.replace(/\s+/g, '') + 'Website']} target='_blank' rel="noopener">
-            <button className='projectbtn'><FaEye /> View</button>
-          </Link>
-        }
-        <br />
-        <br />
+      <div className="projectButtons">
+        <Link
+          to={desc[projectName.replace(/\s+/g, '') + 'Github'] || '#'}
+          target='_blank'
+          rel="noopener"
+        >
+          <button
+            className='projectbtn'
+            disabled={desc[projectName.replace(/\s+/g, '') + 'Github'] === ''}
+          >
+            <FaGithub /> Github
+          </button>
+        </Link>
+
+        <Link
+          to={desc[projectName.replace(/\s+/g, '') + 'Website'] || '#'}
+          target='_blank'
+          rel="noopener"
+        >
+          <button
+            className='projectbtn'
+            disabled={desc[projectName.replace(/\s+/g, '') + 'Website'] === ''}
+          >
+            <FaEye /> View
+          </button>
+        </Link>
       </div>
 
       {(desc[projectName.replace(/\s+/g, '') + 'Tech'] !== '' && desc[projectName.replace(/\s+/g, '') + 'Tech'] !== null) &&
