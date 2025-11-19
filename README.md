@@ -1,4 +1,4 @@
-# Personal Portfolio [Sathishkumar Ranganathan](https://mithran.dev)
+# Personal Portfolio [Sathishkumar Ranganathan](https://skportfolio.dev)
 
 ## Fork
 
