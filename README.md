@@ -6,7 +6,7 @@ Feel free to fork this repo to modify and make changes of your own. Please give 
 
 ## About
 
-<This project is my personal portfolio which features some of my skills, GitHub projects and my resume.
+This project is my personal portfolio which features some of my skills, GitHub projects and my resume.
 These technologies are used to build this website:
 
 - React.js
